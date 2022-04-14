@@ -1,0 +1,131 @@
+.bike-nimbus{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap:40px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.bikelist-1200p{
+  max-width: 1200px;
+}
+.bike-image-small{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap:10px;
+}
+.bike-image-large{
+  margin-bottom: 10px;
+}
+.bike-marketing a{
+  margin-bottom: 0px;
+  grid-row: span 2;
+  font-size: 1rem;;
+}
+
+.bike-marketing{
+  display: grid;
+  grid-template-columns: max-content auto;
+  align-items: center;
+  justify-items: start;
+  gap: 8px 12px;
+  margin-bottom: 20px;
+}
+.bike-marketing span{
+  display: flex;
+  align-items: center;
+  gap:8px;
+  padding: 4px 8px;
+  border-radius: 4px;
+  background-color: var(--color-12);
+  font-size: 0.6rem;
+}
+.bike-buy-now p {
+  margin-bottom: 20px;
+  font-size: 1.2rem;
+}
+.bike-info{
+  background-color: var(--color-12);
+  padding:26px;
+  margin-bottom:20px;
+}
+.bike-info ul{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap:32px;
+}
+.bike-info img{
+  width:24px;
+  margin-bottom:8px;
+}
+.bike-info h3{
+  margin-bottom:8px;
+}
+.h2{
+  margin-bottom: 8px;
+  text-transform: uppercase;
+  font-size:0.75rem;
+}
+.bike-datasheet{
+  background-color: var(--color-12);
+  padding:26px;
+  margin-bottom: 20px;
+}
+.bike-datasheet li{
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--color-11);
+  margin-bottom: 5px;
+}
+
+.ride-safe-bg{
+  background-color: var(--color-11);
+  box-shadow: inset 0px 120px var(--color-0), inset 0px -120px var(--color-12);
+}
+.ride-safe{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap:40px;
+  padding: 40px 20px;
+}
+.ride-safe-content{
+  padding-top:120px;
+  padding-bottom: 120px;
+  display: grid;
+  gap:20px;
+}
+.ride-safe a{
+  margin-bottom: 0px;
+}
+.ride-safe img{
+  height: 100%;
+}
+
+@media (max-width:800px){
+  .bike-all{
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width:500px){
+  .ride-safe{
+    grid-template-columns: 1fr;
+    gap:20px;
+  }
+  .ride-safe-content{
+    padding-bottom: 20px;
+    padding-top: 20px;
+  }
+  .ride-safe-bg{
+    background-color: var(--color-11);
+    box-shadow: inset 0px 120px var(--color-0);
+  }
+  .bike-marketing{
+    grid-template-columns: auto;
+  }
+  .bike-info ul{
+    gap: 22px;
+  }
+ /*  .ride-safe img{
+   display: none;
+  } */
+}

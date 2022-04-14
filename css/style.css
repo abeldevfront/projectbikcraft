@@ -1,0 +1,42 @@
+/* GLOBAL */
+@import url("global/global.css");
+@import url("global/header.css");
+@import url("global/footer.css");
+
+/* HOME */
+@import url("home/main.css");
+@import url("home/bikelist.css");
+@import url("home/tech.css");
+@import url("home/partners.css");
+@import url("home/indication.css");
+
+/* UTILITIES */
+@import url("utilities/typography.css");
+@import url("utilities/colors.css");
+
+/* COMPONENTS */
+@import url("utilities/components.css");
+
+/* INSURANCE */
+@import url("insurance/purchase.css");
+
+/* TERMS */
+@import url("terms/terms.css");
+
+/* Our Bikes */
+@import url("our-bikes/our-bikes.css");
+@import url("our-bikes/nimbus.css");
+@import url("our-bikes/magic.css");
+@import url("our-bikes/nebula.css");
+
+/* Insurance */
+@import url('insurance/insurance.css');
+
+/* FAQ */
+@import url("faq/faq.css");
+
+/* CONTACT */
+@import url('contact/contact.css');
+
+/* PURCHASE */
+@import url('purchase/purchase.css');

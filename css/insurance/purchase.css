@@ -1,0 +1,123 @@
+.purchase-bg{
+  background-color: var(--color-11);
+}
+.purchase{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap:0px 40px;
+  padding: 0px 20px 120px 20px;
+}
+.purchase h2{
+  grid-column: 1/-1;
+  padding: 80px 0px;
+}
+.silver-sub, .gold-sub{
+  background-color: var(--color-12);
+  border-radius: 4px;
+  padding:30px;
+}
+.silver-sub{
+  align-self: center;
+}
+/* .silver-sub{
+  box-shadow: 0px 0px 5px var(--color-9);
+  transition: 0.3s;
+}
+.silver-sub:hover{
+  box-shadow: 0px 0px 5px var(--color-6);
+} */
+.gold-sub{
+  animation-name: gold-sub;
+  animation-iteration-count:infinite;
+  animation-direction: alternate-reverse;
+  animation-duration: 0.8s;
+}
+
+@keyframes gold-sub{
+  0%{
+    box-shadow: 0px 0px 5px var(--color-12);
+  }
+  100%{
+    box-shadow: 0px 0px 5px var(--color-primmary-4);
+  }
+ /*  100%{
+    box-shadow: 0px 0px 0px;
+  } */
+}
+
+
+.silver-info, .gold-info{
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 30px;
+}
+.silver-desc li, .gold-desc li{
+  padding: 0px 0px 15px 30px;
+  position: relative;
+}
+.silver-sub a{
+  background-color: var(--color-10);
+  padding: 16px 32px;
+  text-transform: uppercase;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  font: 600 1.125rem/1.33 "Poppins", sans-serif;
+}
+.price{
+  position: relative;
+}
+.price::after{
+  content:"mensal";
+  color: var(--color-6);
+  font-weight: 600;
+  font-size: 0.75rem;
+  font-family: Poppins;
+  position: absolute;
+  bottom:-10px;
+  right:0px;
+}
+.purchase li::before{
+  content: "";
+  width: 13px;
+  height: 9px;
+  display: inline-block;
+  background-image: url(../../img/icones/lista.svg);
+  position: absolute;
+  top: 6px;
+  left: 5px;
+}
+
+@media (max-width:800px){
+  .silver-sub a{
+    padding: 12px 28px;
+    font-size: 1rem;
+  }
+  .purchase h2{
+    padding: 40px 0px 20px 0px;
+  }
+}
+
+
+
+@media (max-width:600px){
+  .purchase{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap:20px;
+    padding: 0px 20px 60px 20px;
+  }
+}
+@media (max-width:400px){
+  .purchase h2 {
+    padding: 40px 0px 20px 0px;
+}
+  .purchase ul{
+    font-size: 0.75rem;
+  }
+  .purchase a{
+    font-size: 0.75rem;
+  }
+  .silver-info span, .gold-info span{
+    font-size: 1.5rem;
+  }
+}

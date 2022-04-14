@@ -1,0 +1,26 @@
+.main-button {
+  background: linear-gradient(#ffbf00, #f2a50c);
+  padding: 16px 32px;
+  color: var(--color-primmary-5);
+  justify-self: flex-start;
+  text-transform: uppercase;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  font: 600 1.125rem/1.33 "Poppins", sans-serif;
+}
+
+.div-transition-gradient{
+  opacity: 1;
+  transition: 0.3s;
+}
+.div-transition-gradient:hover{
+  opacity: 0.8;
+}
+
+@media (max-width:800px){
+  .main-button {
+    background: linear-gradient(#ffbf00, #f2a50c);
+    padding: 12px 28px;
+    font-size: 16px;
+  }
+}
