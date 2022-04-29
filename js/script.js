@@ -38,3 +38,9 @@ function showFaq(faq){
 
 
 faqButton.forEach(showFaq)
+
+
+//Animation plugin
+if(window.SimpleAnime){
+  new SimpleAnime();
+}

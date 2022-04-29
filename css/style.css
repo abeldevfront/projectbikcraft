@@ -13,6 +13,7 @@
 /* UTILITIES */
 @import url("utilities/typography.css");
 @import url("utilities/colors.css");
+@import url("utilities/animation.css");
 
 /* COMPONENTS */
 @import url("utilities/components.css");
