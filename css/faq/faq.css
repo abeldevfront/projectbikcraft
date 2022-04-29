@@ -11,19 +11,23 @@
 .faq-content:nth-child(even){
   background: var(--color-1);
 }
-.faq-content dt{
+.faq-content dt button{
   display: grid;
   grid-template-columns: auto 1fr auto;
   align-items: center;
   gap:10px;
-  cursor: pointer;
+  cursor: pointer;      
+  width: 100%;
+  text-align: left;
+  border: none;
+  background: none;
 }
 .faq-content dd{
   padding-left: 20px;
   padding-top: 16px;
   max-width: 80ch;
 }
-.faq-content dt::before{
+.faq-content dt button::before{
   content:"";
   display: block;
   width: 12px;
@@ -31,7 +35,7 @@
   background-color: var(--color-primmary-1);
 }
 
-.faq-content dt::after{
+.faq-content dt button::after{
   content:"";
   width: 14px;
   height: 6px;
@@ -39,8 +43,16 @@
   display:block;
   transition: .3s;
 }
-.faq-content dt:hover::after{
+.faq-content dt button[aria-expanded="true"]::after{
   transform: rotate(180deg);
+}
+
+.faq-content dd{
+  display: none;
+}
+.faq-content .active{
+  display: block;
+  
 }
 
 @media (max-width:400px){

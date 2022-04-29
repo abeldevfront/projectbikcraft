@@ -26,8 +26,6 @@
 /* Our Bikes */
 @import url("our-bikes/our-bikes.css");
 @import url("our-bikes/nimbus.css");
-@import url("our-bikes/magic.css");
-@import url("our-bikes/nebula.css");
 
 /* Insurance */
 @import url('insurance/insurance.css');
